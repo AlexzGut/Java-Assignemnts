@@ -13,6 +13,12 @@ public class Assignment_4 {
 		System.out.print("Enter the weight of the package: ");
 		weightOfPackage = input.nextDouble();
 		
+		while (weightOfPackage < 0) {
+			System.out.println("Invalid weight!");
+			System.out.print("Enter the weight of the package: ");
+			weightOfPackage = input.nextDouble();
+		}
+		
 		if (weightOfPackage > 10) {
 			shippingCharges = 3.80;
 		} else if (weightOfPackage > 6) {
@@ -21,7 +27,7 @@ public class Assignment_4 {
 			shippingCharges = 2.20;
 		} else if (weightOfPackage > 0) {
 			shippingCharges = 1.10;
-		}
+		} 
 		
 		System.out.printf("\n              Shipping charges            \n" +
 						  "*******************************************\n" +
