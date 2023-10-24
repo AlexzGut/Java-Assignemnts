@@ -25,7 +25,7 @@ public class Assignment_2 {
 							  String.format("%-48s", "EI - Employee") + "-$%,.2f\n" +
 							  String.format("%-48s", "Federal Income Tax") + "-$%,.2f\n" +
 							  "                                              ----------------\n" +
-							  String.format("%-25s", "Bonus 10%%") + "  %,-22.2f $%,.2f\n" +
+							  String.format("%-25s", "Bonus 10%%") + "  %,-10.2f $%,-10.2f $%,.2f\n" +
 							  String.format("%-49s", "Net Pay") + "$%,-10.2f\n";
 
 		final double SOLO_PAY_RATE = 18.50,
@@ -60,7 +60,7 @@ public class Assignment_2 {
 		eiTax = earnings * EI_EMPLOYEE;
 		federalTax = earnings * FEDERAL_TAX;
 		
-		bonusPay = bonusHours * BONUS_PCT;
+		bonusPay = bonusHours * SOLO_PAY_RATE * BONUS_PCT;
 		
 		netPay = earnings + bonusPay - ccpTax - eiTax - federalTax;
 		
@@ -71,8 +71,7 @@ public class Assignment_2 {
 								   ccpTax,
 								   eiTax,
 								   federalTax,
-								   bonusHours,
-								   bonusPay,
+								   bonusHours, SOLO_PAY_RATE, bonusPay,
 								   netPay);
 		
 		//outputFile.close();
