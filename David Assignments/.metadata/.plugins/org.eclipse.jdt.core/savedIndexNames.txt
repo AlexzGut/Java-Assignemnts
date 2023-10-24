@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\OneDrive\David\Lambton College\2nd Term\CSD_3464 Programming Java SE\Assignments\Programs\.metadata\.plugins\org.eclipse.jdt.core
+4193802229.index
+1865797976.index
+2895088503.index

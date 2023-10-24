@@ -1,0 +1,16 @@
+package com.cestar.assignment2;
+
+import javax.swing.*;
+
+public class PayCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = JOptionPane.showInputDialog(null, "Enter name: ");
+		
+		JOptionPane.showMessageDialog(null, name);
+		JOptionPane.showMessageDialog(null, name, "Title", 0);
+		
+	}
+
+}

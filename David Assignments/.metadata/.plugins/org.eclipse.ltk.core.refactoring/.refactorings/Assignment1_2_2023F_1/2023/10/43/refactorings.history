@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.cestar.printing&apos; to &apos;com.cestar.assignment1&apos;&#x0D;&#x0A;- Original project: &apos;Assignment1_2_2023F_1&apos;&#x0D;&#x0A;- Original element: &apos;Assignment1_2_2023F_1/src/com.cestar.printing&apos;&#x0D;&#x0A;- Renamed element: &apos;Assignment1_2_2023F_1/src/com.cestar.assignment1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.cestar.printing&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.cestar.printing" name="com.cestar.assignment1" qualified="false" references="true" stamp="1698072234155" textual="false" version="1.0"/>
+</session>

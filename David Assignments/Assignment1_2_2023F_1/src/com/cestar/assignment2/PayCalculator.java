@@ -1,0 +1,24 @@
+package com.cestar.assignment2;
+
+import javax.swing.*;
+
+public class PayCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 
+		// Make a form to enter data! 
+		//JOptionPane.showMessageDialog(null, name);
+		float PAYRATE = 16.55f;
+		float BONUSPCENT = 1.50f;
+		float TAXPCENT = 0.15f;
+		float hoursWorked =  Float.parseFloat(JOptionPane.showInputDialog(null, "Enter Number of Hours Worked: ", "Will's Pay calculator program", 2));
+		float bonusHours =  Float.parseFloat(JOptionPane.showInputDialog(null, "Enter Number of bonus Hours Worked: ", "Will's Pay calculator program", 2));
+		float finalPay = ((hoursWorked + bonusHours*BONUSPCENT)*PAYRATE) * (1 - TAXPCENT) ;
+		String finalMessage = String.format("Will, your final pay is: $ %.2f", finalPay);
+		JOptionPane.showMessageDialog(null, finalMessage, "Will's Pay calculator program", 1);
+		
+		
+	}
+
+}
