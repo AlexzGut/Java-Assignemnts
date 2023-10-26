@@ -18,7 +18,7 @@ public class Assignment_5 {
 			System.out.print(coin.getSideUp() + " ");
 			if (i % 10 == 0) System.out.println();
 			if (coin.getSideUp().equals("heads")) heads++;
-			if (coin.getSideUp().equals("tails")) tails++;
+			else tails++;
 		}
 		System.out.println("\nTotal\n" +
 						   "heads   tails\n" +
@@ -38,7 +38,7 @@ class Coin {
 	
 	public void toss() {
 		Random randomNumber = new Random();
-		sideUp = randomNumber.nextInt(2) == 0 ? "heads" : "tails";
+		sideUp = randomNumber.nextBoolean() ? "heads" : "tails";
 	}
 	
 	public String getSideUp() {
