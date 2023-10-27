@@ -71,6 +71,7 @@ public class Assignment3_4 {
 				
 				String[] item_name = new String[items_count]; // array that holds the item names
 				double[] item_price = new double[items_count]; // array that holds the item prices
+				int[] item_quantity = new int[items_count]; // array that holds the item prices
 				final double gst = 0.05; // goods and services tax 5%
 				final double rst = 0.08; // retail sales tax rate 8%
 				double[] gst_cost = new double[items_count]; // array to hold the GST of each item.
@@ -86,14 +87,17 @@ public class Assignment3_4 {
 					
 					System.out.print("Enter the Price : ");
 					item_price[i] = order.nextDouble();
+					
+					System.out.print("Enter the Quantity : ");
+					item_quantity[i] = order.nextInt();
 					order.nextLine();
 					
 					System.out.println(""); // space
 					
-					gst_cost[i] = item_price[i] * gst;
-					rst_cost[i] = item_price[i] * rst;
+					gst_cost[i] = item_price[i] * item_quantity[i] * gst;
+					rst_cost[i] = item_price[i] * item_quantity[i] * rst;
 					sales_tax[i] = (gst_cost[i] + rst_cost[i]);
-					final_price[i] = (sales_tax[i] + item_price[i]);			
+					final_price[i] = (sales_tax[i] + item_price[i] * item_quantity[i] );			
 				}	
 				
 				System.out.println("***** Grocery Items List with Price ***** \n");
@@ -103,6 +107,7 @@ public class Assignment3_4 {
 					System.out.println("Item #: "+(j+1));
 					System.out.println("Product Name : \t\t"+item_name[j]);
 					System.out.println("Regular Price : \t"+ currencyFormat.format(item_price[j]));
+					System.out.println("Quantity : \t\t"+ item_quantity[j]);
 					System.out.println("GST : \t\t\t"+ currencyFormat.format(gst_cost[j]));
 					System.out.println("RST : \t\t\t"+ currencyFormat.format(rst_cost[j]));
 					System.out.println("Total Item Tax : \t"+ currencyFormat.format(sales_tax[j]));
@@ -120,7 +125,7 @@ public class Assignment3_4 {
 				
 				for (int x = 0; x < item_name.length; x++) {
 					
-					total_price += item_price[x];
+					total_price += item_price[x] * item_quantity[x] ;
 					total_gst += gst_cost[x];
 					total_rst += rst_cost[x];
 					total_sales_tax += sales_tax[x];
