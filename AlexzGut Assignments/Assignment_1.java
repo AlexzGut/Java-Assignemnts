@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Assignment_1 {
 
-	/* 
+	/**
 	* Assignment 1:
 	* This program prints a string in the console after taking 3 variables from the user: a String variable 
  	* is saved as the person's name, an int containing the person's age and finally, a double variable containing 
