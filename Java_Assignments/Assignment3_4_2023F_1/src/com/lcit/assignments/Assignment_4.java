@@ -4,7 +4,24 @@ import java.util.Scanner;
 
 public class Assignment_4 {
 
+	/**
+	 * This Freight Shipping Calculator will be taking the user's input for their package weight (in pounds or lbs)
+	 * and the distance of the delivery destination (in miles).
+	 * 
+	 * Based on the weight of the package a fixed package cost will be designated.
+	 * 
+	 * The total cost of the delivery will be determined by a multiplier or increment which is equal to
+	 * the number of times the delivery destination exceeds 500 miles. 
+	 * 
+	 * As an example, If the package weight is less than 2.00 pounds, the package cost will be $ 1.10.
+	 * If the delivery distance is 501 miles, the increment will be 2 because it already exceeded the 500 mile
+	 * threshold. If the distance was 1001 miles, then the increment will be 3.
+	 * 
+	 * @param args
+	 */
+
 	public static void main(String[] args) {
+		
 		Scanner input = new Scanner(System.in);
 				
 		System.out.println("Welcome to the Fast Freight Shipping Calculator!");
