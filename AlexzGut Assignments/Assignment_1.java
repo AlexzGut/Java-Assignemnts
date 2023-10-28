@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Assignment_1 {
 
+	
 	public static void main(String[] args) {
 		
 		final String OUTPUT = "My name is %s, my age is %d, and I hope to earn $%,.2f per year";
