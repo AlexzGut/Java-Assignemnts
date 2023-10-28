@@ -2,7 +2,7 @@ package com.lcit.assignments;
 
 import java.util.Scanner;
 
-public class Assignment6 {
+public class Assignment_6 {
 
 	/**
 	 * The Sales Bar Chart program takes 5 number inputs from the user. Each input
