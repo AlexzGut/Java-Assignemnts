@@ -3,7 +3,14 @@ package com.lcit.assignments;
 import javax.swing.JOptionPane;
 import java.util.Random;
 
-
+/**
+ * This program asks the user to enter the name and number of items of a purchase on a grocery store.
+ * It starts by asking the user to enter the state to calculate the state taxes accordingly. 
+ * Then it asks for the name of the item and the quantity to be purchased. Data validation is done to ensure
+ * the state name is enter correctly. The prices of the products are computed using random numbers.
+ * The output (receipt) is built using the format() method of the String class. The JOptionPane class is used
+ * to get the input from the user, and the output is displayed on the console.
+ * @param args */
 public class Assignment_3 {
 
 	public static void main(String[] args) {
